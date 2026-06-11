@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,46 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bangalore</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}" />
   </head>
   <body>
-    <!-- BANGALORE -->
-    <div class="city-card">
-      <div
-        class="city-image"
-        style="
-          background-image: url(&quot;https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=600&q=80&quot;);
-        "
-      ></div>
-      <div class="city-details">
-        <h2>Bangalore (Bengaluru)</h2>
-        <h4>The Silicon Valley & Garden City</h4>
-        <p>
-          Capital of Karnataka, Bangalore is globally known as India's premier
-          tech hub. Perched on the Deccan Plateau, the city enjoys a perpetually
-          pleasant climate throughout the year and boasts a booming cafe and pub
-          culture alongside historic palaces and lush green spaces.
-        </p>
-        <strong>Key Attractions:</strong>
-        <ul class="spots-list">
-          <li>
-            <strong>Lalbagh Botanical Garden:</strong> Home to India's largest
-            collection of tropical plants and an iconic glass house.
-          </li>
-          <li>
-            <strong>Bangalore Palace:</strong> Built to resemble Windsor Castle,
-            showcasing majestic Tudor-style architecture.
-          </li>
-          <li>
-            <strong>Cubbon Park:</strong> A massive 300-acre green lung right in
-            the heart of the city.
-          </li>
-          <li>
-            <strong>Tipu Sultan's Summer Palace:</strong> An elegant two-storied
-            structure built entirely of teakwood.
-          </li>
-        </ul>
+    <section>
+      <!-- BANGALORE -->
+      <div class="city-card">
+        <div
+          class="city-image"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=600&q=80&quot;);
+          "
+        ></div>
+        <div class="city-details">
+          <h2>Bangalore (Bengaluru)</h2>
+          <h4>The Silicon Valley & Garden City</h4>
+          <p>
+            Capital of Karnataka, Bangalore is globally known as India's premier
+            tech hub. Perched on the Deccan Plateau, the city enjoys a
+            perpetually pleasant climate throughout the year and boasts a
+            booming cafe and pub culture alongside historic palaces and lush
+            green spaces.
+          </p>
+          <strong>Key Attractions:</strong>
+          <ul class="spots-list">
+            <li>
+              <strong>Lalbagh Botanical Garden:</strong> Home to India's largest
+              collection of tropical plants and an iconic glass house.
+            </li>
+            <li>
+              <strong>Bangalore Palace:</strong> Built to resemble Windsor
+              Castle, showcasing majestic Tudor-style architecture.
+            </li>
+            <li>
+              <strong>Cubbon Park:</strong> A massive 300-acre green lung right
+              in the heart of the city.
+            </li>
+            <li>
+              <strong>Tipu Sultan's Summer Palace:</strong> An elegant
+              two-storied structure built entirely of teakwood.
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>

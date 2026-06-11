@@ -1,5 +1,5 @@
 from django.urls import path
 from . import views
 urlpatterns=[
-    path("otherPlace/", views.app3)
+    path("", views.app3)
 ]

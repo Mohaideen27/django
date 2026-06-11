@@ -1,10 +1,11 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>South India Tourism Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}" />
   </head>
   <body>
     <header>
@@ -31,16 +32,16 @@
       <section class="quick-list">
         <h3>Popular Destinations in South India</h3>
         <ul>
-          <li>Chennai (Tamil Nadu)</li>
-          <li>Bangalore (Karnataka)</li>
-          <li>Hyderabad (Telangana)</li>
-          <li>Kochi (Kerala)</li>
-          <li>Ooty & Kodaikanal</li>
-          <li>Mysore & Hampi</li>
-          <li>Munnar & Alleppey</li>
-          <li>Visakhapatnam & Tirupati</li>
-          <li>Pondicherry (UT)</li>
-          <li>Wayanad & Coorg</li>
+          <li>{{place1}}</li>
+          <li>{{place2}}</li>
+          <li>{{place3}}</li>
+          <li>{{place4}}</li>
+          <li>{{place5}}</li>
+          <li>{{place6}}</li>
+          <li>{{place7}}</li>
+          <li>{{place8}}</li>
+          <li>{{place9}}</li>
+          <li>{{place0}}</li>
         </ul>
       </section>
     </div>
