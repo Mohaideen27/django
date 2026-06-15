@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Course List</h1>
+    <ul
+      style="
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      "
+    >
+      {% for course, description in courses.items %}
+      <li>
+        <a href="{{description.1}}">
+          <h2>{{course}}</h2>
+          <p>{{description.0}}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

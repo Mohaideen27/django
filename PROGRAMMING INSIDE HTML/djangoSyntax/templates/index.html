@@ -6,14 +6,6 @@
     <title>Courses</title>
   </head>
   <body>
-    <h1>Course List</h1>
-    <ul>
-      {% for course, description in courses.items %}
-      <li>
-        <h2>{{course}}</h2>
-        <p>{{description}}</p>
-      </li>
-      {% endfor %}
-    </ul>
+    {% block nav %} {% endblock nav %}
   </body>
 </html>
