@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "balance","changePin","deposit",
-    "transfer","welcomePage","withdraw",
+    "balance","pinChange","deposit",
+    "transfer","main","withdraw",
 ]
 
 MIDDLEWARE = [
