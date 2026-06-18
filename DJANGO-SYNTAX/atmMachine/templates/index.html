@@ -1,17 +1,15 @@
-{% extends "base.html" %} {% block content %}
-<div>
-  <main>
-    <h1>Welcome</h1>
-    <div>
-      <ul>
-        <li><a href="#">Insert Card</a></li>
-        <li><a href="/language">Enter Credential</a></li>
-      </ul>
-    </div>
-  </main>
-  <footer>
+{% extends "main.html" %} {% block content %}
+<main style="border: 2px solid white" id="index">
+  <div>Welcome</div>
+  <div>
+    <ul>
+      <li><a href="#">Insert Card</a></li>
+      <li><a href="/language">Enter Credential</a></li>
+    </ul>
+  </div>
+  <div>
     <p>Insert card feature is not availabe right now.</p>
     <h4>Sorry for the inconvience !</h4>
-  </footer>
-</div>
+  </div>
+</main>
 {% endblock content %}
