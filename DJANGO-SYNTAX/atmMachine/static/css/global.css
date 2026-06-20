@@ -46,4 +46,6 @@ main {
   justify-content: space-between;
 }
 
-/* #index> */
+main > * {
+  font-size: xx-large;
+}
