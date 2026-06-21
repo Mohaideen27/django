@@ -1,18 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enter Pin</title>
-  </head>
-  <body>
-    <header>Enter pin page</header>
-    <main>
-      <form action="">
-        <label for="password">Enter Pin</label>
-        <input type="password" id="password" />
-      </form>
-      <div><a href="/services">Next</a></div>
-    </main>
-  </body>
-</html>
+{% extends "main.html" %}{% block content %}
+<main id="pin">
+  <div id="pinHead">Enter pin</div>
+  <form action="" id="pinInput">
+    <input type="password" id="password" />
+  </form>
+  <div id="pinFoot"><a href="/services">Next</a></div>
+</main>
+{% endblock content %}

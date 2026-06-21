@@ -11,14 +11,18 @@ body {
   height: 100vh;
 }
 
+#idea {
+  color: aliceblue;
+}
+
 .main {
   /* display: flex;
   flex-direction: column;
   justify-content: space-between; */
-  border: 2px solid rgb(106, 106, 106);
+  border: 0.05px solid rgb(62, 62, 62);
   margin: auto;
   min-height: 600px;
-  width: 800px;
+  width: 900px;
   color: white;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -35,17 +39,229 @@ header {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
   height: 80px;
   background-color: rgb(31, 30, 33);
 }
 
-main {
+#index {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: space-between;
 }
 
-main > * {
+#index > * {
+  /* border: 1px solid white; */
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainCred {
+  display: flex;
+  justify-content: end;
+}
+
+#mainHeader {
   font-size: xx-large;
+}
+
+#mainCred li {
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(35, 35, 35);
+  font-weight: bold;
+  border: 1px solid transparent;
+  width: 300px;
+  margin-top: 30px;
+  margin-right: 20px;
+  padding: 15px 10px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+#mainLogin:hover {
+  border: 1px solid whitesmoke;
+}
+
+#languages {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+
+#langList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#langList > * {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#langList a {
+  /* border: 1px solid white; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px 40px;
+  border-radius: 20px;
+}
+
+#langList li {
+  cursor: pointer;
+  background-color: rgb(35, 35, 35);
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin: 20px;
+  color: rgb(139, 139, 139);
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+#langEng:hover {
+  border: 1px solid whitesmoke;
+}
+#langFoot {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  justify-content: start;
+  align-items: center;
+}
+
+#pin {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#pinHead {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: x-large;
+}
+
+#pinInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pinInput input {
+  /* border: 1px solid white; */
+  height: 70px;
+  width: 400px;
+  margin: 60px;
+  border-radius: 30px;
+  background-color: rgb(55, 55, 55);
+  text-align: center;
+}
+/* #pinInput input :active {
+  border: none;
+} */
+#pinFoot {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#pinFoot a {
+  border: 1px solid transparent;
+  color: whitesmoke;
+  background-color: rgb(35, 35, 35);
+  border-radius: 20px;
+  padding: 15px 80px;
+  margin: 20px;
+  transition: all 0.2s;
+}
+#pinFoot a:hover {
+  border: 1px solid white;
+}
+
+#services {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#services ul {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+#services a {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid transparent;
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(35, 35, 35);
+  transition: all 0.2s;
+}
+
+#services a:hover {
+  border: 1px solid white;
+}
+
+#deposit * {
+  /* border: 1px solid gray; */
+}
+#deposit {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#depositFoot {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#depositSubmitBtn {
+  border: 1px solid transparent;
+  color: whitesmoke;
+  background-color: rgb(35, 35, 35);
+  border-radius: 20px;
+  padding: 15px 80px;
+  margin: 20px;
+  transition: all 0.2s;
+}
+#depositForm {
+  font-size: large;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 30px;
+}
+#depositForm input {
+  height: 50px;
+  width: 400px;
+  border-radius: 30px;
+  background-color: rgb(55, 55, 55);
+  text-align: center;
+}
+
+#depositSubmitBtn:hover {
+  border: 1px solid whitesmoke;
 }
