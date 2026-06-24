@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "balance","pinChange","deposit",
-    "transfer","main","withdraw",
+    "transfer","main","withdraw","accounts"
 ]
 
 MIDDLEWARE = [
